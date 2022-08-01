@@ -1,0 +1,25 @@
+table td {
+  border-top: thin solid;
+  border-bottom: thin solid;
+  padding: 10px;
+}
+table th {
+  border-top: thin solid;
+  border-bottom: thin solid;
+  padding: 10%;
+}
+table th:first-child {
+  border-left: thin solid;
+}
+
+table th:last-child {
+  border-right: thin solid;
+}
+
+table td:first-child {
+  border-left: thin solid;
+}
+
+table td:last-child {
+  border-right: thin solid;
+}
