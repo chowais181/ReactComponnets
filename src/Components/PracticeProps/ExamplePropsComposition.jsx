@@ -1,8 +1,19 @@
 //children props and composition concept
 
 function FancyBorder(props) {
-  return <div style={{ color: props.color }}>{props.children}</div>;
+  return (
+    <div style={{ color: props.color }}>
+      <h1>HI!</h1>
+      {props.children}
+    </div>
+  );
 }
+
+
+
+
+
+
 function Dialog(props) {
   return (
     <FancyBorder color="blue">

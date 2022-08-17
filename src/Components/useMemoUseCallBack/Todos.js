@@ -1,0 +1,17 @@
+import { memo } from "react";
+
+const Todos = ({ todos, addTodo }) => {
+  //if we useCall back then it will only print when todos change
+  console.log("child render");
+  return (
+    <>
+      <h2>My Todos</h2>
+      {todos.map((todo, index) => {
+        return <p key={index}>{todo}</p>;
+      })}
+      <button onClick={addTodo}>Add Todo</button>
+    </>
+  );
+};
+
+export default memo(Todos);

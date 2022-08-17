@@ -82,8 +82,8 @@ export default function Registration() {
           <input
             type="text"
             name="name"
-            minlength="3"
-            maxlength="20"
+            minLength="3"
+            maxLength="20"
             style={{ padding: "2%" }}
             onChange={(e) => setName(e.target.value)}
           />
@@ -155,7 +155,7 @@ export default function Registration() {
             style={{
               padding: "4%",
               fontSize: "1rem",
-              "background-color": "blue",
+              "backgroundColor": "blue",
               color: "white",
             }}
           />
